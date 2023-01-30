@@ -1,0 +1,12 @@
+@use "./variables" as *;
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:$navBg;
+    min-height:60px;
+    padding:10px;
+    a{
+        color: $mainTxt;
+    }
+}
