@@ -7,10 +7,11 @@ function ToDoItem({item}) {
     <div className="todos-container">
     <div className="todos-item">
     <p>{item.text}</p>
-    </div>
+   
      <div className="actions">
      <button onClick={()=>updateItem(item.id)} className="btn">&#10004;</button>
      </div>
+  </div>
   </div>
   )
 }

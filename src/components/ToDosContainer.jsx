@@ -5,7 +5,7 @@ const ToDosContainer = () => {
   const{todos, addItem}=useContext(MyContext);
   const [value, setValue] = useState("");
 
-  const handleNewToChange = (event) => {
+  const handleNewTodoChange = (event) => {
     setValue(event.target.value);
   };
 
@@ -20,7 +20,7 @@ const ToDosContainer = () => {
   });
 
   return (
-    <div className="todo-container">
+    <div className="todos-container">
       <form className="todo-form" onSubmit={handleSubmit}>
         <label htmlFor="todo" className="input-item">
           <input
@@ -28,7 +28,7 @@ const ToDosContainer = () => {
             name="todo"
             id="todo"
             value={value}
-            onChange={handleNewToChange}
+            onChange={handleNewTodoChange}
           />
         </label>
         <input type="submit" value="ADD" className="btn" />

@@ -6,7 +6,7 @@ const ToDonesContainer = () => {
    
     const toDonesItems= todones.map((todone) => {
         return (
-          <ToDoneItem key={todone.text} item={todone} />
+          <ToDoneItem key={todone.id} item={todone} />
         );
       })
 
